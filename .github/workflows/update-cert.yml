@@ -1,8 +1,10 @@
 name: Update Cert
 
 on:
-  schedule:
-    - cron: '0 10 1 * *'
+  watch:
+    types: [started]
+  #schedule:
+    #- cron: '0 10 1 * *'
   # add a tag to trigger manually
   workflow_dispatch:
 
