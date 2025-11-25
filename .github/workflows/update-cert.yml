@@ -41,7 +41,7 @@ jobs:
           ENABLE_OCSP: ${{ secrets.ENABLE_OCSP }}
           ENABLE_HTTP2: ${{ secrets.ENABLE_HTTP2 }}
           HE_Username: ${{ secrets.HE_Username }}
-          HE_Password: &{{ secrets.HE_Password }}
+          HE_Password: ${{ secrets.HE_Password }}
           CERT_HOME: /home/runner/.acme.sh
           ACME_HOME: /home/runner/.acme.sh
           WORK_DIR: .
